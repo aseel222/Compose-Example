@@ -59,6 +59,7 @@ dependencies {
     implementation("androidx.compose.ui:ui:1.5.3")
 
     implementation("androidx.compose.ui:ui-graphics:1.5.3")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.6.2")
     implementation("androidx.compose.ui:ui-tooling-preview:1.5.3")
     implementation("androidx.compose.material3:material3:1.1.2")
     implementation("androidx.compose.material:material-android:1.5.3")
