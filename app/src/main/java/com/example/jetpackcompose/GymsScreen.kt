@@ -41,7 +41,6 @@ import com.example.jetpackcompose.ui.theme.Purple40
 @Composable
 fun gymsscreen(){
     val vm:GymViewModel= viewModel()
-
 LazyColumn( ){
     items(vm.state.value) {
         gymitem(it){gymid ->
