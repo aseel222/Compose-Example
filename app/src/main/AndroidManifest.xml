@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 <uses-permission android:name="android.permission.INTERNET"/>
     <application
+        android:name=".GymsApplication"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -13,7 +14,7 @@
         android:theme="@style/Theme.Jetpackcompose"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".gyms.presentaion.MainActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.Jetpackcompose">
@@ -21,6 +22,13 @@
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter >
+                <data android:host="www.gymsaround.com" android:scheme="https">
+                </data>
+                <action android:name="android.intent.action.VIEW"></action>
+                <category android:name="android.intent.category.BROWSABLE"></category>
+                <category android:name="android.intent.category.DEFAULT"></category>
             </intent-filter>
         </activity>
     </application>
